@@ -1,0 +1,21 @@
+let numeros = [];
+let crescente = true;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Verificar se está em ordem crescente
+for (let i = 0; i < 4; i++) {
+    if (numeros[i] > numeros[i + 1]) {
+        crescente = false;
+    }
+}
+
+// Mostrar resultado
+if (crescente) {
+    document.write("O vetor está em ordem crescente.");
+} else {
+    document.write("O vetor não está em ordem crescente.");
+}
