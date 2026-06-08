@@ -1,0 +1,25 @@
+let vetor1 = [];
+let vetor2 = [];
+let soma = [];
+
+// Ler o primeiro vetor
+for (let i = 0; i < 5; i++) {
+    vetor1[i] = parseInt(prompt("Digite um número para o vetor 1:"));
+}
+
+// Ler o segundo vetor
+for (let i = 0; i < 5; i++) {
+    vetor2[i] = parseInt(prompt("Digite um número para o vetor 2:"));
+}
+
+// Somar os elementos correspondentes
+for (let i = 0; i < 5; i++) {
+    soma[i] = vetor1[i] + vetor2[i];
+}
+
+// Mostrar o vetor resultante
+document.write("Vetor resultante:<br>");
+
+for (let i = 0; i < 5; i++) {
+    document.write(soma[i] + "<br>");
+}
