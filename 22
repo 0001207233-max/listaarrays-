@@ -1,0 +1,17 @@
+let numeros = [];
+let impares = 0;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Contar os números ímpares
+for (let i = 0; i < 5; i++) {
+    if (numeros[i] % 2 != 0) {
+        impares++;
+    }
+}
+
+// Mostrar a quantidade de ímpares
+document.write("Quantidade de números ímpares: " + impares);
