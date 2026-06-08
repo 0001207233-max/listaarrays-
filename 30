@@ -1,0 +1,39 @@
+let numeros = [];
+let maior, menor;
+let posMaior = 0;
+let posMenor = 0;
+let temp;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Considerar o primeiro número como maior e menor
+maior = numeros[0];
+menor = numeros[0];
+
+// Encontrar o maior e o menor valor e suas posições
+for (let i = 1; i < 5; i++) {
+    if (numeros[i] > maior) {
+        maior = numeros[i];
+        posMaior = i;
+    }
+
+    if (numeros[i] < menor) {
+        menor = numeros[i];
+        posMenor = i;
+    }
+}
+
+// Trocar as posições
+temp = numeros[posMaior];
+numeros[posMaior] = numeros[posMenor];
+numeros[posMenor] = temp;
+
+// Mostrar o vetor atualizado
+document.write("Vetor atualizado:<br>");
+
+for (let i = 0; i < 5; i++) {
+    document.write(numeros[i] + "<br>");
+}
