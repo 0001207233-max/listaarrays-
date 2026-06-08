@@ -1,0 +1,13 @@
+let vetor = [];
+
+// Preencher o vetor automaticamente
+for (let i = 0; i < 5; i++) {
+    vetor[i] = i * 2;
+}
+
+// Mostrar os valores do vetor
+document.write("Valores do vetor:<br>");
+
+for (let i = 0; i < 5; i++) {
+    document.write("Posição " + i + ": " + vetor[i] + "<br>");
+}
