@@ -1,0 +1,26 @@
+let numeros = [];
+let quadrados = [];
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Criar o vetor com os quadrados
+for (let i = 0; i < 5; i++) {
+    quadrados[i] = numeros[i] * numeros[i];
+}
+
+// Mostrar o primeiro vetor
+document.write("Vetor original:<br>");
+
+for (let i = 0; i < 5; i++) {
+    document.write(numeros[i] + "<br>");
+}
+
+document.write("<br>Vetor dos quadrados:<br>");
+
+// Mostrar o segundo vetor
+for (let i = 0; i < 5; i++) {
+    document.write(quadrados[i] + "<br>");
+}
