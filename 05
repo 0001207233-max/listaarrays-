@@ -1,0 +1,13 @@
+let numeros = [];
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Dobrar os valores e exibir os resultados
+document.write("Valores dobrados:<br>");
+
+for (let i = 0; i < 5; i++) {
+    document.write(numeros[i] * 2 + "<br>");
+}
