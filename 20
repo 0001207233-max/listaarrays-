@@ -1,0 +1,26 @@
+let vetorA = [];
+let vetorB = [];
+let vetorC = [];
+
+// Ler o vetor A
+for (let i = 0; i < 5; i++) {
+    vetorA[i] = parseInt(prompt("Digite um número para o vetor A:"));
+}
+
+// Ler o vetor B
+for (let i = 0; i < 5; i++) {
+    vetorB[i] = parseInt(prompt("Digite um número para o vetor B:"));
+}
+
+// Intercalar os vetores
+for (let i = 0; i < 5; i++) {
+    vetorC.push(vetorA[i]);
+    vetorC.push(vetorB[i]);
+}
+
+// Mostrar o vetor resultante
+document.write("Vetor intercalado:<br>");
+
+for (let i = 0; i < vetorC.length; i++) {
+    document.write(vetorC[i] + "<br>");
+}
