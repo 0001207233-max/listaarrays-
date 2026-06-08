@@ -1,0 +1,30 @@
+let numeros = [];
+let maior;
+let segundoMaior;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Inicializar maior e segundo maior
+if (numeros[0] > numeros[1]) {
+    maior = numeros[0];
+    segundoMaior = numeros[1];
+} else {
+    maior = numeros[1];
+    segundoMaior = numeros[0];
+}
+
+// Procurar o maior e o segundo maior
+for (let i = 2; i < 5; i++) {
+    if (numeros[i] > maior) {
+        segundoMaior = maior;
+        maior = numeros[i];
+    } else if (numeros[i] > segundoMaior) {
+        segundoMaior = numeros[i];
+    }
+}
+
+// Mostrar o resultado
+document.write("O segundo maior valor é: " + segundoMaior);
