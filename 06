@@ -1,0 +1,17 @@
+let numeros = [];
+let pares = 0;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Contar quantos são pares
+for (let i = 0; i < 5; i++) {
+    if (numeros[i] % 2 == 0) {
+        pares++;
+    }
+}
+
+// Mostrar a quantidade de números pares
+document.write("Quantidade de números pares: " + pares);
