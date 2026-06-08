@@ -1,0 +1,25 @@
+let numeros = [];
+let procurado;
+let encontrado = false;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Perguntar qual número deseja procurar
+procurado = parseInt(prompt("Digite o número que deseja procurar:"));
+
+// Verificar se o número está no vetor
+for (let i = 0; i < 5; i++) {
+    if (numeros[i] == procurado) {
+        encontrado = true;
+    }
+}
+
+// Mostrar resultado
+if (encontrado) {
+    document.write("Número encontrado no vetor!");
+} else {
+    document.write("Número não encontrado no vetor!");
+}
