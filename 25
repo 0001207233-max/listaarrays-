@@ -1,0 +1,22 @@
+let numeros = [];
+let multiplicador;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Ler o número multiplicador
+multiplicador = parseInt(prompt("Digite o número multiplicador:"));
+
+// Multiplicar todos os elementos do vetor
+for (let i = 0; i < 5; i++) {
+    numeros[i] = numeros[i] * multiplicador;
+}
+
+// Mostrar o vetor resultante
+document.write("Vetor resultante:<br>");
+
+for (let i = 0; i < 5; i++) {
+    document.write(numeros[i] + "<br>");
+}
