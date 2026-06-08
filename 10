@@ -1,0 +1,13 @@
+let nomes = [];
+
+// Ler 5 nomes
+for (let i = 0; i < 5; i++) {
+    nomes[i] = prompt("Digite um nome:");
+}
+
+// Mostrar os nomes na ordem digitada
+document.write("Nomes digitados:<br>");
+
+for (let i = 0; i < 5; i++) {
+    document.write(nomes[i] + "<br>");
+}
