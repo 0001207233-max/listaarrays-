@@ -1,0 +1,24 @@
+let numeros = [];
+let soma = 0;
+let media;
+
+// Ler 5 números reais
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseFloat(prompt("Digite um número:"));
+    soma += numeros[i];
+}
+
+// Calcular a média
+media = soma / 5;
+
+// Mostrar a média
+document.write("Média: " + media + "<br><br>");
+
+// Mostrar os números acima da média
+document.write("Números acima da média:<br>");
+
+for (let i = 0; i < 5; i++) {
+    if (numeros[i] > media) {
+        document.write(numeros[i] + "<br>");
+    }
+}
