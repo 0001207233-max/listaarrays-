@@ -1,0 +1,13 @@
+let numeros = [];
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Mostrar os números na ordem inversa
+document.write("Números na ordem inversa:<br>");
+
+for (let i = 4; i >= 0; i--) {
+    document.write(numeros[i] + "<br>");
+}
