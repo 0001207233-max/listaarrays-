@@ -1,0 +1,25 @@
+let numeros = [];
+let ultimo;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Guardar o último elemento
+ultimo = numeros[4];
+
+// Deslocar os elementos para a direita
+for (let i = 4; i > 0; i--) {
+    numeros[i] = numeros[i - 1];
+}
+
+// Colocar o último elemento na primeira posição
+numeros[0] = ultimo;
+
+// Mostrar o vetor atualizado
+document.write("Vetor após a rotação:<br>");
+
+for (let i = 0; i < 5; i++) {
+    document.write(numeros[i] + "<br>");
+}
