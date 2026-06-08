@@ -1,0 +1,21 @@
+let numeros = [];
+let procurado;
+let contador = 0;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Perguntar qual número deseja procurar
+procurado = parseInt(prompt("Digite o número que deseja contar:"));
+
+// Contar quantas vezes o número aparece
+for (let i = 0; i < 5; i++) {
+    if (numeros[i] == procurado) {
+        contador++;
+    }
+}
+
+// Mostrar o resultado
+document.write("O número " + procurado + " aparece " + contador + " vez(es) no vetor.");
