@@ -1,0 +1,23 @@
+let numeros = [];
+let repetido = false;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Verificar se existem números repetidos
+for (let i = 0; i < 5; i++) {
+    for (let j = i + 1; j < 5; j++) {
+        if (numeros[i] == numeros[j]) {
+            repetido = true;
+        }
+    }
+}
+
+// Mostrar o resultado
+if (repetido) {
+    document.write("Existem números repetidos no vetor.");
+} else {
+    document.write("Não existem números repetidos no vetor.");
+}
