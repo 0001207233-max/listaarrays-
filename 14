@@ -1,0 +1,21 @@
+let numeros = [];
+let pares = [];
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Copiar apenas os números pares
+for (let i = 0; i < 5; i++) {
+    if (numeros[i] % 2 == 0) {
+        pares.push(numeros[i]);
+    }
+}
+
+// Mostrar o vetor de pares
+document.write("Números pares:<br>");
+
+for (let i = 0; i < pares.length; i++) {
+    document.write(pares[i] + "<br>");
+}
