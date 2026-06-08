@@ -1,0 +1,32 @@
+let numeros = [];
+let maior;
+let menor;
+let diferenca;
+
+// Ler 5 números inteiros
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt("Digite um número inteiro:"));
+}
+
+// Considerar o primeiro número como maior e menor
+maior = numeros[0];
+menor = numeros[0];
+
+// Encontrar o maior e o menor valor
+for (let i = 1; i < 5; i++) {
+    if (numeros[i] > maior) {
+        maior = numeros[i];
+    }
+
+    if (numeros[i] < menor) {
+        menor = numeros[i];
+    }
+}
+
+// Calcular a diferença
+diferenca = maior - menor;
+
+// Mostrar o resultado
+document.write("Maior valor: " + maior + "<br>");
+document.write("Menor valor: " + menor + "<br>");
+document.write("Diferença: " + diferenca);
